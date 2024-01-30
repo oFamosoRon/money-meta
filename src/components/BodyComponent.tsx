@@ -1,5 +1,6 @@
 import { VStack, Text, Textarea } from "@chakra-ui/react";
 import React from "react";
+import PreviewSampleComponent from "./PreviewSampleComponent";
 
 const BodyComponent = () => {
   return (
@@ -11,6 +12,7 @@ const BodyComponent = () => {
         keep track of your progress and collect it when you reach your goals!
       </Text>
       <Text fontSize="6xl">&#x1F3AF;</Text>
+      <PreviewSampleComponent />
     </VStack>
   );
 };
