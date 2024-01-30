@@ -1,7 +1,8 @@
 import "./App.css";
+import HomeScreen from "./components/HomeScreen";
 
 function App() {
-  return <h1>Money Meta</h1>;
+  return <HomeScreen />;
 }
 
 export default App;
