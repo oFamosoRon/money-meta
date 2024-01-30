@@ -10,13 +10,12 @@ import {
   Tabs,
 } from "@chakra-ui/react";
 import logo from "../assets/money-meta-logo.jpeg";
+import Logo from "./Logo";
 
 const TopBarComponent = () => {
   return (
     <HStack justifyContent={"space-between"} width="100%">
-      <Box borderRadius="full" overflow="hidden" boxSize="90px">
-        <Image src={logo} objectFit="cover" boxSize="100%" />
-      </Box>
+      <Logo />
       <Tabs variant="soft-rounded" colorScheme="purple">
         <TabList>
           <Tab>Home</Tab>
