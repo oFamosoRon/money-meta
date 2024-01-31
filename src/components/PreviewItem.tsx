@@ -4,10 +4,10 @@ import { Box, HStack, Progress, Text, VStack } from "@chakra-ui/react";
 interface Props {
   name: string;
   progress: number;
+  textColor: string;
 }
 
-const PreviewItem = ({ name, progress }: Props) => {
-  const textColor = "#FAF5FF";
+const PreviewItem = ({ name, progress, textColor }: Props) => {
   return (
     <>
       <HStack w="100%" justifyContent={"space-between"}>

@@ -5,18 +5,26 @@ import {
   Image,
   Tab,
   TabList,
-  TabPanel,
-  TabPanels,
   Tabs,
 } from "@chakra-ui/react";
-import logo from "../assets/money-meta-logo.jpeg";
 import Logo from "./Logo";
 
-const TopBarComponent = () => {
+interface Props {
+  setCurrentTab: (isHome: boolean) => void;
+}
+
+const TopBarComponent = ({ setCurrentTab }: Props) => {
   return (
     <HStack justifyContent={"space-between"} width="100%">
       <Logo />
-      <Tabs variant="soft-rounded" colorScheme="purple">
+      <Tabs
+        variant="soft-rounded"
+        colorScheme="purple"
+        onChange={(event: number) => {
+          if (event === 0) return setCurrentTab(true);
+          return setCurrentTab(false);
+        }}
+      >
         <TabList>
           <Tab>Home</Tab>
           <Tab>How it works</Tab>
