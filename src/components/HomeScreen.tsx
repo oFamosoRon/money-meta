@@ -2,6 +2,7 @@ import { Grid, VStack } from "@chakra-ui/react";
 import React, { useState } from "react";
 import TopBarComponent from "./TopBarComponent";
 import BodyComponent from "./BodyComponent";
+import HowItWorks from "./HowItWorks";
 
 const HomeScreen = () => {
   const [isHome, setHome] = useState(true);
@@ -9,7 +10,7 @@ const HomeScreen = () => {
   return (
     <VStack padding={"12px"}>
       <TopBarComponent setCurrentTab={setHome} />
-      {isHome ? <BodyComponent /> : <h1>body</h1>}
+      {isHome ? <BodyComponent /> : <HowItWorks />}
     </VStack>
   );
 };
