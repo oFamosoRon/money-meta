@@ -8,6 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { MdCheckCircle } from "react-icons/md";
+import AuthenticationForm from "./AuthenticationForm";
 
 const HowItWorks = () => {
   return (
@@ -58,7 +59,9 @@ const HowItWorks = () => {
           Create your first goals for free! &#x1F389;.{" "}
         </Text>
       </GridItem>
-      <GridItem area={"left"}>Another column</GridItem>
+      <GridItem area={"left"}>
+        <AuthenticationForm />
+      </GridItem>
     </Grid>
   );
 };
